@@ -1,0 +1,11 @@
+<h1>Year</h1>
+<ul>
+  @foreach(var Year in Model)
+  {
+    <li>@Year.GetYear()</li>
+  }
+</ul>
+<p><a href="/Year/new">Year </a></p>
+<form action="/Year/delete" method="post">
+  <button type="submit" name="button">Clear All Items</button>
+</form>
